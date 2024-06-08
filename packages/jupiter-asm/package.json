@@ -1,0 +1,26 @@
+{
+  "name": "@jupitersim/asm",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "lint": "eslint \"**/*.ts\"",
+    "lint:fix": "eslint \"**/*.ts\" --fix",
+    "clean": "rimraf .turbo dist coverage"
+  },
+  "devDependencies": {
+    "@jupitersim/tsconfig": "*",
+    "@types/node": "^20.14.2",
+    "rimraf": "^5.0.7",
+    "tsup": "^8.1.0",
+    "tsx": "^4.14.0",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "@jupitersim/tsconfig/node.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["tsup.config.ts", "src"],
+  "exclude": ["dist", "node_modules"]
+}
